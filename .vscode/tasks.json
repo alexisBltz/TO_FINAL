@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-std=c++17",
+                "-I",
+                "C:/Users/am951/vcpkg/installed/x64-windows/include",
+                "-L",
+                "C:/Users/am951/vcpkg/installed/x64-windows/lib",
+                "main.cpp",
+                "-o",
+                "main.exe",
+                "-lws2_32"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

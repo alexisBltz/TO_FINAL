@@ -1,0 +1,10 @@
+^G:\PROYECTOS\TO_FINAL\BUILD\CMAKEFILES\FE24839A36D1239A51C4F95E701F7854\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SG:/Proyectos/TO_FINAL -BG:/Proyectos/TO_FINAL/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file G:/Proyectos/TO_FINAL/build/WebSocketServer.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
